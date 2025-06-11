@@ -35,7 +35,7 @@ class StudentSummary(BaseModel):
     gpa: float
     total_credits: int
 
-@app.post("/student_summary")
+@app.post("/score")
 async def student_summary(data: StudentRequest):
     total_credits = 0
     total_points = 0.0
